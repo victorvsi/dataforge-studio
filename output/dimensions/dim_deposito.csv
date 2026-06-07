@@ -1,0 +1,5 @@
+deposito_id,nome,capacidade_m3,cidade
+DEP-001,Depósito Principal,50000,São Paulo
+DEP-002,Canteiro A,10000,Campinas
+DEP-003,Canteiro B,8000,Sorocaba
+DEP-004,Canteiro C,12000,Santos
