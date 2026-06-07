@@ -1,3 +1,17 @@
 venv/
+.venv/
 __pycache__/
+*.py[cod]
+*$py.class
 .pytest_cache/
+
+output/facts/
+output/dimensions/
+output/quality/
+output/parquet/
+output/metadata/
+
+.DS_Store
+.vscode/
+.idea/
+*.log
