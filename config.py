@@ -1,17 +1,18 @@
 from pathlib import Path
 
-# --- Diretórios ---
+# Cria o caminho base garantindo que seja relativo à execução atual
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "output"
+
 DIMENSIONS_DIR = OUTPUT_DIR / "dimensions"
 FACTS_DIR = OUTPUT_DIR / "facts"
-PARQUET_DIR = OUTPUT_DIR / "parquet"
 QUALITY_DIR = OUTPUT_DIR / "quality"
+PARQUET_DIR = OUTPUT_DIR / "parquet"
 METADATA_DIR = OUTPUT_DIR / "metadata"
 
-# Cria os diretórios se não existirem
-for path in [OUTPUT_DIR, DIMENSIONS_DIR, FACTS_DIR, PARQUET_DIR, QUALITY_DIR, METADATA_DIR]:
-    path.mkdir(parents=True, exist_ok=True)
+# Cria todas as pastas, ignorando se elas já existirem
+for pasta in [OUTPUT_DIR, DIMENSIONS_DIR, FACTS_DIR, QUALITY_DIR, PARQUET_DIR, METADATA_DIR]:
+    pasta.mkdir(parents=True, exist_ok=True)
 
 # --- Parâmetros da Simulação ---
 NUM_FORNECEDORES = 50
