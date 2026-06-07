@@ -36,13 +36,11 @@ df_rup = load_data("output/facts/fato_rupturas.csv")
 df_snap = load_data("output/facts/fato_snapshot_estoque.csv")
 
 # Carregamento Dimensões
-df_prod = load_data("output/dimensions/dim_produto.csv")
+df_prod = load_data("output/dimensions/dim_produto.csv") 
 df_forn = load_data("output/dimensions/dim_fornecedor.csv")
 
-# Carregamento Qualidade
-df_mov_sujo = load_data("output/quality/fato_movimentacoes.csv") 
-if df_mov_sujo is None:
-    df_mov_sujo = load_data("output/quality/movimentacoes_sujo.csv")
+# Carregamento Qualidade (Usando o nome exato do seu Exportador)
+df_mov_sujo = load_data("output/quality/fato_movimentacoes_sujo.csv")
 
 # ==========================================
 # INTERFACE PRINCIPAL
