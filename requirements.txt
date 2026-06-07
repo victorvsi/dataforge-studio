@@ -1,6 +1,7 @@
-pandas==2.2.0
-Faker==22.6.0
-pytest==8.0.0
-pyarrow==15.0.0
+pandas
 streamlit
-plotly==5.18.0
+plotly
+Faker
+pyarrow
+matplotlib
+pytest
